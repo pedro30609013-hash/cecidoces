@@ -153,42 +153,62 @@ h2 {
 }
 
 .performace{
-    width: 270px;
-    height: 400px;
+    max-height: 350px;
+    max-width: 270px;
     background: linear-gradient(135deg, #c7dcd4 10%, #e8bcbc 50%, #f5e6e6 95%);
-    border-radius: 20px;
+    border-radius: 20px 20px 20px ;
     justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 50px;
     box-sizing: border-box;
 }
 
 .btn-performace{
     text-decoration: none;
     background-color: #e8bcbc;
-    color: black;
-    padding: 10px 20px;
+    color: white;
+    padding: 8px 10px;
     border-radius: 12px;
     font-weight: bold;
     transition: 0.3s;
-    margin-bottom: 20px;
-    height: 50px;
 }
 
 .imagen{
-    height: 200px;
-    width: 200px;
+    height: 240px;
+    width: 270px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 .top-card{
- max-height: 300px;
  max-height: 270px;
+ max-width: 270px;
  display: flex;
- gap: 5px;
  flex-direction: column;
  align-items: center;
+ border-radius: 20px 20px 0 0;
+ gap: 5px;
+}
+
+.texto{
+color: white;
+font-size: 16px;
+
+}
+
+.bottom-card{
+ max-height: 40px;
+ max-width: 270px;
+ display: flex;
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ margin-bottom: 20px;
+}
+
+.btn-performace:hover {
+    background-color: white;
+    transform: scale(1.05);
 }
 
 /* ------------------------------------------------------ */
@@ -197,4 +217,13 @@ body{
     margin-right: 6px ;
     margin-left: 6px;
     margin-top: 6px;
+}
+
+footer{
+    height: 120px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
 }
