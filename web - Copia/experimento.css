@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+}
+
+/* HEADER */
+
+.hid{
+    justify-content: center;
+    display: flex;
+}
+
+header {
+    width: 90%;
+    max-width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+    margin-top: 15px;
+
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 30px;
+}
+
+/* LOGO */
+
+.kinkon {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MENU */
+
+.menu {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* BOTÃO */
+
+.reserva {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-reserva {
+    text-decoration: none;
+    background-color: #e8bcbc;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-reserva:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* TEXTO */
+
+h1 {
+    color: black;
+    font-size: 20px;
+}
+
+h2 {
+    color: black;
+    font-size: 24px;
+}
+
+.pt1 {
+    width: 100%;
+    max-height: 100vh;
+    position: relative;
+    background: linear-gradient(135deg, #c7dcd4 10%, #e8bcbc 50%, #f5e6e6 95%);
+    border-radius: 20px;
+    padding-bottom: 80px;
+    margin: 0; 
+    overflow: hidden;
+}
+
+
+
+/* ------------------------------------------------------ */
+
+main{
+    max-width: 100%;
+    height: 1200px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.subcatalogo{
+    height: 70px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+
+.perfo{
+    height: 600px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 100px;
+}
+
+.performace{
+    max-height: 350px;
+    max-width: 270px;
+    background: linear-gradient(135deg, #c7dcd4 10%, #e8bcbc 50%, #f5e6e6 95%);
+    border-radius: 20px 20px 20px ;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.btn-performace{
+    text-decoration: none;
+    background-color: #e8bcbc;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.imagen{
+    height: 240px;
+    width: 270px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.top-card{
+ max-height: 270px;
+ max-width: 270px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ border-radius: 20px 20px 0 0;
+ gap: 5px;
+}
+
+.texto{
+color: white;
+font-size: 16px;
+
+}
+
+.bottom-card{
+ max-height: 40px;
+ max-width: 270px;
+ display: flex;
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ margin-bottom: 20px;
+}
+
+.btn-performace:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* ------------------------------------------------------ */
+
+body{
+    margin-right: 6px ;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+footer{
+    height: 120px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    background-color: #f0f0f0;
+    
+}
