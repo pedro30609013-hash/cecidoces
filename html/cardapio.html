@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aula de DEV WEB</title>
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="../css/cardapio.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+</head>
+
+<body>
+
+        <div style="height: 70px;" class="hid">
+    <header>
+
+            <div class="kinkon">
+                <h2>Ceci Doces</h2>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>    
+                <li><a href="produtos.html">Cardapio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+
+            <div class="reserva">
+                <a href="#" class="btn btn-dark">Carrinho 🛒</a>
+            </div>
+            </div>
+    </header>
+        </div>
+
+ <p class="data">
+                <script type="text/JavaScript">
+                    dia = new Array("Domingo","Segunda-feira","Terça-Feira","Quarta-Feira","Quinta-Feira","Sexta-Feira","Sábado");
+
+                    mes = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro")
+
+                    data = new Date
+                    document.write(dia[data.getDay()] + ", " +  data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear());
+                </script>
+            </p>
+    <main>
+
+  <div class="cards-container">
+
+    <div class="card-thumbnail"
+         onclick="abrirModal(this)"
+         data-titulo="Bolo de Chocolate"
+         data-preco="79.90"
+         data-img="https://via.placeholder.com/400x250"
+         data-conteudo="Bolo fofinho com cobertura cremosa de chocolate.">
+
+      <img src="https://via.placeholder.com/300x180">
+      <h3>Bolo de Chocolate</h3>
+      <p>R$ 79,90</p>
+    </div>
+
+    <div class="card-thumbnail"
+         onclick="abrirModal(this)"
+         data-titulo="Cupcake"
+         data-preco="9.90"
+         data-img="https://via.placeholder.com/400x250"
+         data-conteudo="Cupcake macio com recheio especial.">
+
+      <img src="https://via.placeholder.com/300x180">
+      <h3>Cupcake</h3>
+      <p>R$ 9,90</p>
+    </div>
+
+    <div class="card-thumbnail"
+         onclick="abrirModal(this)"
+         data-titulo="Brigadeiro"
+         data-preco="4.50"
+         data-img="https://via.placeholder.com/400x250"
+         data-conteudo="Brigadeiro gourmet com chocolate belga.">
+
+      <img src="https://via.placeholder.com/300x180">
+      <h3>Brigadeiro</h3>
+      <p>R$ 4,50</p>
+    </div>
+
+    <div class="card-thumbnail"
+         onclick="abrirModal(this)"
+         data-titulo="Torta de Morango"
+         data-preco="89.90"
+         data-img="https://via.placeholder.com/400x250"
+         data-conteudo="Torta leve com morangos frescos.">
+
+      <img src="https://via.placeholder.com/300x180">
+      <h3>Torta de Morango</h3>
+      <p>R$ 89,90</p>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="fecharModalExterno(event)">
+  <div class="modal-content">
+    <span class="close-btn" onclick="fecharModal()">&times;</span>
+
+    <img id="modalImg">
+
+    <h2 id="modalTitulo"></h2>
+    <h4 id="modalPreco"></h4>
+
+    <p id="modalConteudo"></p>
+
+    <button class="btn btn-dark mt-3">Adicionar ao carrinho</button>
+  </div>
+</div>
+
+<script>
+function abrirModal(card) {
+  document.getElementById('modalOverlay').classList.add('active');
+
+  document.getElementById('modalTitulo').textContent = card.dataset.titulo;
+  document.getElementById('modalPreco').textContent = "R$ " + card.dataset.preco;
+  document.getElementById('modalConteudo').textContent = card.dataset.conteudo;
+  document.getElementById('modalImg').src = card.dataset.img;
+}
+
+function fecharModal() {
+  document.getElementById('modalOverlay').classList.remove('active');
+}
+
+function fecharModalExterno(event) {
+  if (event.target.id === 'modalOverlay') {
+    fecharModal();
+  }
+}
+</script>
+
+<footer>
+        <a href="../html/contatos.html" class="footer-box">
+            <h1>Contato</h1>
+            <p>
+                <img src="../img/telefone.png">
+                <img src="../img/email.png">
+                <img src="../img/whatsapp.png">
+                <img src="../img/instagram.png">
+                ㅤ
+            </p>
+        </a>
+
+        <a href="sobre.html" class="footer-box">
+            <h1>Sobre nós</h1>
+            <p>
+                Nós somos a Ceci Doces,<br>
+                não só uma doceria convencional,<br>
+                mas uma doceria que te trás<br>
+                excelência, aconchego e felicidade dês de 1997.
+            </p>
+        </a>
+
+        <a href="localizacao.html" class="footer-box">
+            <h1>Localização</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29238.538562317644!2d-46.55961205!3d-23.6467124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d4736a1cfa7%3A0x5bdfac5796c8c06!2sAmericanas%20Express!5e0!3m2!1spt-BR!2sbr!4v1773879575814!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </a>
+    </footer>
+
+</body>
+</html>

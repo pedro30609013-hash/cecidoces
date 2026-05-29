@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ceci Doces</title>
+
+    <link rel="stylesheet" href="../css/estilo_produtos.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <div style="height: 70px;" class="hid">
+
+        <header>
+
+            <div class="kinkon">
+                <h2>Ceci Doces</h2>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Cardápio</a></li>
+            </ul>
+
+            <div class="reserva">
+                <a href="#" class="link-carrinho">Carrinho 🛒</a>
+            </div>
+
+        </header>
+
+    </div>
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- BOLOS -->
+
+        <div class="titulo-secao">
+            <h2>Nossos Bolos</h2>
+        </div>
+
+        <div class="container_1">
+
+            <div class="card"
+                onclick="abrirDetalhes('Bolo de Baunilha','../img/bolo.jpg','Delicioso bolo de baunilha.')">
+
+                <img src="../img/bolo.jpg">
+
+                <h2>Bolo de Baunilha</h2>
+
+                <p>Massa leve e cremosa</p>
+
+                <p class="preco">R$ 70,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Bolo de Churros','../img/bolo2.jpg','Bolo recheado com doce de leite.')">
+
+                <img src="../img/bolo2.jpg">
+
+                <h2>Bolo de Churros</h2>
+
+                <p>Especial da casa</p>
+
+                <p class="preco">R$ 85,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Bolo de Leite Ninho','../img/bolo3.jpg','Cobertura cremosa de leite ninho.')">
+
+                <img src="../img/bolo3.jpg">
+
+                <h2>Bolo de Leite Ninho</h2>
+
+                <p>Super cremoso</p>
+
+                <p class="preco">R$ 85,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Bolo de Chocolate','../img/bolo4.jpg','Chocolate intenso e delicioso.')">
+
+                <img src="../img/bolo4.jpg">
+
+                <h2>Bolo de Chocolate</h2>
+
+                <p>Chocolate premium</p>
+
+                <p class="preco">R$ 70,00</p>
+
+            </div>
+
+        </div>
+
+        <!-- BRIGADEIROS -->
+
+        <div class="titulo-secao">
+            <h2>Nossos Brigadeiros</h2>
+        </div>
+
+        <div class="container_1">
+
+            <div class="card"
+                onclick="abrirDetalhes('Brigadeiro Gourmet','../img/bri.jpg','Brigadeiro tradicional gourmet.')">
+
+                <img src="../img/bri.png">
+
+                <h2>Brigadeiro Gourmet</h2>
+
+                <p>Chocolate belga</p>
+
+                <p class="preco">R$ 3,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Brigadeiro Branco','../img/bri2.jpg','Brigadeiro branco delicioso.')">
+
+                <img src="../img/bri2.jpg">
+
+                <h2>Brigadeiro de castanha</h2>
+
+                <p>Brigadeiro de chocolate<br> envolto por castanhas</p>
+
+                <p class="preco">R$ 3,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Brigadeiro de Morango','../img/bri3.jpg','Recheado com morango.')">
+
+                <img src="../img/bri3.jpg">
+
+                <h2>Brigadeiro de confete</h2>
+
+                <p>Brigadeiro de chocolate<br> envolto por confete</p>
+
+                <p class="preco">R$ 3,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Brigadeiro Especial','../img/bri4.jpg','Brigadeiro especial da casa.')">
+
+                <img src="../img/bri4.png">
+
+                <h2>Brigadeiro Especial</h2>
+
+                <p>Brigadeiro de Ninho<br> com surpresa de uva</p>
+
+                <p class="preco">R$ 4,00</p>
+
+            </div>
+
+        </div>
+
+        <!-- CONES -->
+
+        <div class="titulo-secao">
+            <h2>Nossos Cones</h2>
+        </div>
+
+        <div class="container_1">
+
+            <div class="card"
+                onclick="abrirDetalhes('Cone de Chocolate','../img/con1.png','Cone recheado com chocolate.')">
+
+                <img src="../img/con1.png">
+
+                <h2>Cone de Chocolate</h2>
+
+                <p>Recheio de maracuja</p>
+
+                <p class="preco">R$ 10,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Cone de Morango','../img/con2.png','Cone recheado com morango.')">
+
+                <img src="../img/con2.png">
+
+                <h2>Cone de Brigadeiro</h2>
+
+                <p>Recheio de Brigadeiro</p>
+
+                <p class="preco">R$ 10,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Cone de Leite Ninho','../img/con3.png','Cone cremoso de leite ninho.')">
+
+                <img src="../img/con3.png">
+
+                <h2>Cone de Morango</h2>
+
+                <p>Recheio de Sensação</p>
+
+                <p class="preco">R$ 10,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Cone Especial','../img/con4.png','Cone especial da Ceci Doces.')">
+
+                <img src="../img/con4.png">
+
+                <h2>Cone de Limão</h2>
+
+                <p>Recheio de Limão</p>
+
+                <p class="preco">R$ 10,00</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="titulo-secao">
+            <h2>Nossas Trufas</h2>
+        </div>
+
+        <div class="container_1">
+
+            <div class="card"
+                onclick="abrirDetalhes('Brigadeiro Gourmet','../img/bri.jpg','Brigadeiro tradicional gourmet.')">
+
+                <img src="../img/truf2.png">
+
+                <h2>Trufa de Maracuja</h2>
+
+                <p>Recheio de maracuja </p>
+
+                <p class="preco">R$ 5,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Brigadeiro Branco','../img/bri2.jpg','Brigadeiro branco delicioso.')">
+
+                <img src="../img/truf1.png">
+
+                <h2>Trufa de Brigadeiro</h2>
+
+                <p>Recheio de Brigadeiro</p>
+
+                <p class="preco">R$ 5,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Brigadeiro de Morango','../img/bri3.jpg','Recheado com morango.')">
+
+                <img src="../img/truf4.png">
+
+                <h2>Trufa de Morango</h2>
+
+                <p>Recheio de Sensação</p>
+
+                <p class="preco">R$ 5,00</p>
+
+            </div>
+
+            <div class="card"
+                onclick="abrirDetalhes('Brigadeiro Especial','../img/bri4.jpg','Brigadeiro especial da casa.')">
+
+                <img src="../img/truf3.png">
+
+                <h2>Trufa de Limão</h2>
+
+                <p>Recheio de Limão</p>
+
+                <p class="preco">R$ 5,00</p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- SCRIPT -->
+
+    <script>
+
+        function abrirDetalhes(nome, imagem, descricao){
+
+            let url =
+            `pop_produtos.html?nomeProduto=${encodeURIComponent(nome)}
+            &imgProduto=${encodeURIComponent(imagem)}
+            &descProduto=${encodeURIComponent(descricao)}`;
+
+            window.open(
+                url,
+                "_blank",
+                "width=500,height=550,left=500,top=120"
+            );
+        }
+
+    </script>
+
+
+    <footer>
+        <a href="../html/contatos.html" class="footer-box">
+            <h1>Contato</h1>
+            <p>
+                <img src="../img/telefone.png">
+                <img src="../img/email.png">
+                <img src="../img/whatsapp.png">
+                <img src="../img/instagram.png">
+                <br>
+                <br>
+                <br>
+            </p>
+        </a>
+
+        <a href="sobre.html" class="footer-box">
+            <h1>Sobre nós</h1>
+            <p>
+                Nós somos a Ceci Doces,<br>
+                não só uma doceria convencional,<br>
+                mas uma doceria que te trás<br>
+                excelência, aconchego e felicidade dês de 1997.
+            </p>
+        </a>
+
+        <a href="localizacao.html" class="footer-box">
+            <h1>Localização</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29238.538562317644!2d-46.55961205!3d-23.6467124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d4736a1cfa7%3A0x5bdfac5796c8c06!2sAmericanas%20Express!5e0!3m2!1spt-BR!2sbr!4v1773879575814!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </a>
+    </footer>
+</body>
+
+</html>

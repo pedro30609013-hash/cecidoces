@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produto</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+
+            background:#ffffff;
+
+            font-family:cursive;
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            height:100vh;
+        }
+
+        .popup{
+
+            width:90%;
+
+            max-width:500px;
+
+            background:white;
+
+            border-radius:25px;
+
+            padding:30px;
+
+            text-align:center;
+
+            box-shadow:0 8px 25px rgba(0,0,0,0.2);
+
+            position:relative;
+        }
+
+        /* TITULO */
+
+        #nome-produto{
+
+            color:#f3a6b6;
+
+            font-size:38px;
+
+            margin-bottom:25px;
+        }
+
+        /* IMAGEM */
+
+        .imagem-container{
+
+            width:100%;
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            position:relative;
+        }
+
+        #img-produto{
+
+            width:320px;
+
+            height:320px;
+
+            object-fit:cover;
+
+            border-radius:20px;
+
+            box-shadow:0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        /* SETAS */
+
+        .seta{
+
+            position:absolute;
+
+            top:50%;
+
+            transform:translateY(-50%);
+
+            background:#f3a6b6;
+
+            color:white;
+
+            border:none;
+
+            width:45px;
+
+            height:45px;
+
+            border-radius:50%;
+
+            font-size:22px;
+
+            cursor:pointer;
+
+            transition:0.3s;
+        }
+
+        .seta:hover{
+
+            background:#e78ea2;
+        }
+
+        .esquerda{
+
+            left:-15px;
+        }
+
+        .direita{
+
+            right:-15px;
+        }
+
+        /* DESCRIÇÃO */
+
+        #desc-produto{
+
+            margin-top:25px;
+
+            font-size:20px;
+
+            color:#777;
+
+            line-height:1.5;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main class="popup">
+
+        <h1 id="nome-produto"></h1>
+
+        <div class="imagem-container">
+
+            <button class="seta esquerda">&#10094;</button>
+
+            <img id="img-produto" src="">
+
+            <button class="seta direita">&#10095;</button>
+
+        </div>
+
+        <p id="desc-produto"></p>
+
+    </main>
+
+    <script>
+
+    const params = new URLSearchParams(window.location.search);
+
+    const nome = params.get("nomeProduto");
+
+    const imagem = params.get("imgProduto");
+
+    const descricao = params.get("descProduto");
+
+    document.getElementById("nome-produto").innerText = nome;
+
+    document.getElementById("img-produto").src = imagem;
+
+    document.getElementById("desc-produto").innerText = descricao;
+
+</script>
+
+</body>
+
+</html>

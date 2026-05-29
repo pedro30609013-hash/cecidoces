@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:cursive;
+
+    background-color:#fff5f5;
+}
+
+/* TITULOS */
+
+.titulo-secao{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    margin-bottom:30px;
+}
+
+.titulo-secao h2{
+
+    font-size:35px;
+
+    color:#d67c7c;
+}
+
+/* CONTAINER */
+
+.container_1{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:40px;
+
+    padding-bottom:50px;
+}
+
+/* CARD */
+
+.card{
+
+    width:280px;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+    transition:0.3s;
+
+    cursor:pointer;
+}
+
+.card:hover{
+
+    transform:scale(1.05);
+}
+
+/* IMAGEM */
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+}
+
+/* TEXTO */
+
+.card h2{
+
+    margin-top:15px;
+
+    text-align:center;
+
+    color:#d67c7c;
+}
+
+.card p{
+
+    text-align:center;
+
+    margin-top:10px;
+
+    color:#777;
+}
+
+/* PREÇO */
+
+.preco{
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+    color:#e48d8d;
+
+    font-size:20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .container_1{
+
+        gap:25px;
+    }
+
+    .card{
+
+        width:90%;
+        max-width:320px;
+    }
+}
+

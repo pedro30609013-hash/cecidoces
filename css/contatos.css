@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: cursive;
+}
+
+body{
+
+    background:linear-gradient(135deg,#f5e6e6,#fff5f5);
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+}
+
+/* MAIN */
+
+main{
+
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:100px 20px 80px;
+}
+
+/* CARD */
+
+.contact-card{
+
+    width:100%;
+    max-width:500px;
+
+    background:white;
+
+    border-radius:40px;
+
+    padding:40px 30px;
+
+    box-shadow:0 10px 30px rgba(232,188,188,0.35);
+
+    text-align:center;
+
+    border:3px solid #f5e6e6;
+}
+
+/* LOGO */
+
+.logo{
+
+    width:100px;
+    height:100px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#e8bcbc;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:45px;
+
+    color:white;
+}
+
+/* TITULO */
+
+section h1{
+
+    color:#c78686;
+
+    font-size:36px;
+
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    color:#b58d8d;
+
+    margin-bottom:30px;
+}
+
+/* CONTATOS */
+
+.contact-info{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+
+    margin-bottom:30px;
+}
+
+.info-item{
+
+    background:#fff7f7;
+
+    border:2px solid #f5e6e6;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    color:#8d6b6b;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.info-item:hover{
+
+    transform:scale(1.02);
+
+    background:#fff0f0;
+}
+
+.info-item img{
+
+    width:24px;
+    height:24px;
+}
+
+/* FORMULARIO */
+
+.contact-form{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    border:2px solid #f5e6e6;
+
+    outline:none;
+
+    background:#fff9f9;
+}
+
+.contact-form textarea{
+
+    resize:none;
+
+    height:120px;
+}
+
+.contact-form button{
+
+    background:#e8bcbc;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+
+    background:#d99d9d;
+
+    transform:scale(1.02);
+}
+
+/* FOOTER */
+
+footer{
+
+    width:100%;
+
+ 
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
